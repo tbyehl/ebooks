@@ -1,4 +1,4 @@
-﻿
+﻿$script = ''
 function ConvertTo-EnhancedHTML {
 <#
 .SYNOPSIS
@@ -760,7 +760,7 @@ to help visually indicate that the section can be toggled.
                 } else {
                     $wrote_first_line = $true
                     $headerrow = ""
-                    $datarow = "<td$(if ($cell_css -ne '') { ' class="'+$cell_css+'"' })>$name :</td><td$(if ($css -ne '') { ' class="'+$css+'"' })>$value</td>"
+                    $datarow = "<td$(if ($cell_css -ne '') { ' class="'+$cell_css+'"' })>$name :</td><td$(if ($cell_css -ne '') { ' class="'+$cell_css+'"' })>$value</td>"
                     $out += "<tr$(if ($row_css -ne '') { ' class="'+$row_css+'"' })>$datarow</tr>"
                 }
             }
